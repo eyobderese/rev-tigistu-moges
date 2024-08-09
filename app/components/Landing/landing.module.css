@@ -1,0 +1,7 @@
+@media (min-width: 640px) {
+  .container {
+    background-image: url("../../assets//imags/persona.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

@@ -1,10 +1,11 @@
-import Image from "next/image";
 import Button from "./components/Button/button";
+import HomeContent from "./components/Home Content/home_content";
+import Landing from "./components/Landing/landing";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Button />
+    <main>
+      <HomeContent />
     </main>
   );
 }
