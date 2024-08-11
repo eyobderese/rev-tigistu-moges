@@ -7,5 +7,14 @@ import Teaching from "./components/Home Content/teaching";
 import Landing from "./components/Landing/landing";
 
 export default function Home() {
-  return <main></main>;
+  return (
+    <main>
+      <Landing />
+      <div className="md:mx-20">
+        <HomeContent1 />
+        <HomeContent2 />
+        <Teaching />
+      </div>
+    </main>
+  );
 }

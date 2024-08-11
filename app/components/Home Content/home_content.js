@@ -4,7 +4,7 @@ import Line from "../Line/line";
 
 function HomeContent1() {
   return (
-    <div className="flex flex-col justify-center  items-center md:gap-24 md:flex-row mx-4 mt-4 flex-shrink ">
+    <div className="flex flex-col justify-center md:justify-between md:gap-24 md:flex-row mx-4 mt-4 flex-shrink ">
       <div className="flex-shrink pb-10">
         <p className="text-4xl font-bold align-middle ">Watch Latest Message</p>
         <Line />

@@ -16,7 +16,7 @@ const NavLinks = () => {
       {navItem.map((item) => (
         <Link
           href={item.link}
-          className="hover:font-bold hover:underline text-white"
+          className="hover:font-bold hover:underline text-white text-[17px]"
         >
           {item.name}
         </Link>
@@ -32,7 +32,7 @@ function Nav() {
   return (
     <>
       <nav>
-        <div className="hidden lg:flex gap-8 mr-16 justify-between text-white">
+        <div className="hidden lg:flex gap-8 mr-[300px] justify-around text-white">
           <NavLinks />
         </div>
         <div>
