@@ -1,3 +1,4 @@
+import ArticleDetail from "./components/ArticleDetail/articleDetaile";
 import ArticleCard from "./components/Card/articleCard";
 import Card from "./components/Card/card";
 import Article from "./components/Home Content/articles";
@@ -9,12 +10,7 @@ import Landing from "./components/Landing/landing";
 export default function Home() {
   return (
     <main>
-      <Landing />
-      <div className="md:mx-20">
-        <HomeContent1 />
-        <HomeContent2 />
-        <Teaching />
-      </div>
+      <ArticleDetail />
     </main>
   );
 }
