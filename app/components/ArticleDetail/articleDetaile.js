@@ -8,9 +8,9 @@ function ArticleDetail() {
       <div className="relative max-h-[400px] bg-black overflow-hidden ">
         <Image
           src={articleImage}
-          className="w-full h-full  object-contain opacity-40"
+          className="w-full h-full  object-cover opacity-40"
         />
-        <div className="absolute bottom-0 left-0 p-4 bg-black bg-opacity-50 text-white">
+        <div className="absolute bottom-0 left-0 p-4 text-white">
           <p className="font-bold">Title of the article</p>
           <p>Posted date</p>
         </div>
