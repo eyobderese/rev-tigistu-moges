@@ -5,10 +5,10 @@ import photo from "@/app/assets/imags/photo1.jpg";
 function Biography({ direction }) {
   var className = "";
   var pad = "border-r-0 pr-20";
-  var directionClass = "left-[16.5%]";
+  var directionClass = "left-[250px]";
   if (direction == "left") {
     className += "flex-row-reverse";
-    directionClass = "right-[16.5%]";
+    directionClass = "right-[250px]";
     pad = "border-l-0 pl-20";
   }
   return (
