@@ -1,12 +1,12 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 const NavLinks = () => {
   const navItem = [
     { name: "Home", link: "/" },
-    { name: "Teaching", link: "/" },
+    { name: "Teaching", link: "/teaching" },
     { name: "Article", link: "/" },
     { name: "About", link: "/" },
   ];
@@ -14,25 +14,39 @@ const NavLinks = () => {
   return (
     <>
       {navItem.map((item) => (
-        <Link
-          href={item.link}
-          className="hover:font-bold hover:underline text-white text-[17px]"
-        >
-          {item.name}
-        </Link>
+        <AnimatedLink href={item.link}>{item.name}</AnimatedLink>
       ))}
     </>
   );
 };
 
+/**
+ * Renders the navigation component.
+ * @returns {JSX.Element} The rendered navigation component.
+ */
 function Nav() {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1024) {
+        setOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const togleNavBar = () => setOpen(!open);
   return (
     <>
       <nav>
-        <div className="hidden lg:flex gap-8 mr-[300px] justify-around text-white">
+        <div className="hidden lg:flex gap-8  justify-around text-white">
           <NavLinks />
         </div>
         <div>
@@ -52,6 +66,19 @@ function Nav() {
         </div>
       )}
     </>
+  );
+}
+
+function AnimatedLink({ href, children }) {
+  return (
+    <Link
+      class="group text-white transition-all duration-300 ease-in-out font-bold text-[17px]"
+      href={href}
+    >
+      <span class="bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+        {children}
+      </span>
+    </Link>
   );
 }
 
