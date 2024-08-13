@@ -2,7 +2,7 @@ import Image from "next/image";
 import Button from "../Button/button";
 import Line from "../Line/line";
 
-function HomeContent1() {
+function Message() {
   return (
     <div className="flex flex-col justify-center md:justify-between md:gap-24 md:flex-row mx-4 mt-4 flex-shrink ">
       <div className="flex-shrink pb-10">
@@ -30,4 +30,4 @@ function HomeContent1() {
   );
 }
 
-export default HomeContent1;
+export default Message;

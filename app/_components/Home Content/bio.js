@@ -4,7 +4,7 @@ import Line from "../Line/line";
 import Button from "../Button/button";
 import Link from "next/link";
 
-function HomeContent2() {
+function Bio() {
   return (
     <div>
       <div className="text-left hidden sm:block md:hidden mx-4">
@@ -40,4 +40,4 @@ function HomeContent2() {
   );
 }
 
-export default HomeContent2;
+export default Bio;
