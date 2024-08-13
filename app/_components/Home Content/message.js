@@ -13,7 +13,7 @@ function Message() {
           Channel.
         </p>
 
-        <Button>All Message</Button>
+        <Button to="/">All Message</Button>
       </div>
 
       <div className=" w-full md:w-1/3 h-96 flex justify-center align-middle min-w-[430px]">

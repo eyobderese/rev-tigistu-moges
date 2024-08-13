@@ -2,6 +2,7 @@ const { default: Image } = require("next/image");
 import persona from "../../assets/imags/persona.png";
 import logo from "../../assets/imags/church_logo.jpg";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
+import Link from "next/link";
 
 function ArticleCard() {
   return (
@@ -16,10 +17,14 @@ function ArticleCard() {
           <p className=" text-lg overflow-hidden whitespace-normal line-clamp-2 leading-tight ">
             እግዚአብሔር ፈጣሪ ነው። ነገር ግን ፈጣሪ ብቻ አይደለም። አዳሽም ነው! የፈጠረው ቢበላሽ ይሠራዋል፣ ቢሰበር
           </p>
-          <div className="flex gap-2">
-            <p className="font-bold text-[16px] text-primary">Read atricle </p>
-            <ArrowRightIcon className="size-6 text-primary" />
-          </div>
+          <Link href="/article/1">
+            <div className="flex gap-2">
+              <p className="font-bold text-[16px] text-primary hover:text-[18px]">
+                Read atricle{" "}
+              </p>
+              <ArrowRightIcon className="size-6 text-primary hover:relative hover:left-3" />
+            </div>
+          </Link>
         </div>
       </div>
     </div>

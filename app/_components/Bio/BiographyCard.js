@@ -2,7 +2,7 @@ import Line from "../Line/line";
 import Image from "next/image";
 import photo from "@/app/assets/imags/photo1.jpg";
 
-function Biography({ direction }) {
+function BiographyCard({ direction }) {
   var className = "";
   var pad = "border-r-0 pr-20";
   var directionClass = "left-[250px]";
@@ -43,4 +43,4 @@ function Biography({ direction }) {
   );
 }
 
-export default Biography;
+export default BiographyCard;

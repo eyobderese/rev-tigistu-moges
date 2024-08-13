@@ -9,6 +9,13 @@ export default function TeachingPage() {
         <TeachingCard />
         <TeachingCard />
         <TeachingCard />
+        <TeachingCard />
+        <TeachingCard />
+        <TeachingCard />
+        <TeachingCard />
+        <TeachingCard />
+        <TeachingCard />
+        <TeachingCard />
       </Teaching>
     </main>
   );
