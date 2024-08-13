@@ -16,6 +16,7 @@ const NavLinks = () => {
     <>
       {navItem.map((item) => (
         <AnimatedLink
+          key={item.name}
           href={item.link}
           className={activeLink === item.name ? "border-b-2 text-[19px]" : ""}
           onClick={() => setActiveLink(item.name)}
