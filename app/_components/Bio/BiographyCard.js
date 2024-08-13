@@ -23,7 +23,7 @@ function BiographyCard({ direction }) {
           repudiandae soluta pariatur et. Necessitatibus quod iure quisquam
           maiores quos doloribus facere dolorum pariatur eius?
         </p>
-        <Line className="w-4/6 m-auto lg:hidden" />
+        <Line className=" mx-auto w-4/6 m-auto lg:hidden " />
       </div>
 
       <div className="border border-black lg:hidden">
@@ -33,7 +33,7 @@ function BiographyCard({ direction }) {
       <div
         className={`hidden lg:flex  self-end  items-center w-full ${className} `}
       >
-        <Line className={`w-1 h-[200px] relative ${directionClass} `} />
+        <Line className={`mx-auto w-1 h-[200px] relative ${directionClass} `} />
 
         <div className={`border border-black bg-primary self-end  ${pad} `}>
           <Image src={photo} width={416} height={278} />
