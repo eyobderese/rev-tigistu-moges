@@ -4,8 +4,8 @@ import Line from "../_components/Line/line";
 
 export default function BioPage() {
   return (
-    <main>
-      <Bio className="flex-row-reverse" ishideden={true} />
+    <main className="mx-[5%] lg:mx-0">
+      <Bio className="sm:flex-row-reverse md:justify-around" ishideden={true} />
       <div className="mx-[20%] my-5 ">
         <p className="text-2xl font-bold mx-1">Biography</p>
         <Line className="md:w-1/5 mx-1" />

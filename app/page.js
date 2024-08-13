@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
       <div className="lg mx-9">
         <Message />
-        <Bio />
+        <Bio className="sm:flex-row" />
         <Teaching>
           <TeachingCard />
           <TeachingCard />

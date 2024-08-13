@@ -4,8 +4,8 @@ import Line from "../Line/line";
 function Article({ children, buttonHidden }) {
   return (
     <div className="mx-4 my-8">
-      <p className="text-2xl font-bold">Articles</p>
-      <Line className="md:w-1/2 mx-1" />
+      <p className="text-2xl font-bold mx-2">Articles</p>
+      <Line className="md:w-1/2 mx-2" />
       <p className="text-lg">
         As you begin the steps to selling, learn what to expect with our Sellers
         Guide

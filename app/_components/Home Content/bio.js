@@ -17,9 +17,9 @@ function Bio({ className, ishideden }) {
         <Line className="w-1/2 ml-0" />
       </div>
       <div
-        className={`flex flex-col justify-center md:justify-between  md:gap-14 sm:${className}   mt-4 flex-shrink relative`}
+        className={`flex flex-col justify-center md:justify-between  md:gap-14   mt-4 flex-shrink relative ${className}`}
       >
-        <div className="mx-4 flex-shrink pb-10 max-w-[600px]">
+        <div className="mx-4 flex-shrink pb-10 max-w-[600px] ">
           <p className="text-4xl font-bold align-middle sm:hidden md:block ">
             Who is <span className="text-primary">Rev Tigistu?</span>
           </p>
