@@ -19,7 +19,7 @@ function Message() {
       <div className=" w-full md:w-1/3 h-96 flex justify-center align-middle min-w-[430px]">
         <iframe
           className="w-full h-5/6"
-          src="https://www.youtube.com/watch?v=d6V8PoXttd8"
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
