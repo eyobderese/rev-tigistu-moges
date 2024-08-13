@@ -3,7 +3,7 @@ import backgroundImage from "../../assets/imags/persona.png";
 
 function Hero() {
   return (
-    <div className="border  relative bg-cover bg-center max-h-screen max-w-screen m-t items-center overflow-hidden">
+    <div className="border  relative bg-cover bg-center max-h-[90vh] max-w-screen m-t items-center overflow-hidden">
       <Image src={backgroundImage} className="w-full object-cover" />
 
       <div className="hidden sm:block p-4 absolute bottom-1/3 md:bottom-[20%] left md:bg-secondary md:bg-opacity-50  md:p-10 md:border border-l-0  md:border-white rounded-xl  ">

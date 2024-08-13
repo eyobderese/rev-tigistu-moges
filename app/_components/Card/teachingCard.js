@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function TeachingCard() {
   return (
-    <Link href="https://www.youtube.com/watch?v=Kp4nvtR80Ck">
+    <Link href="https://www.youtube.com/watch?v=d6V8PoXttd8" target="_blank">
       <div className="flex flex-col p-2 max-w-[600px] gap-3 mt-5">
         <div>
           <Image src={persona} className="rounded-3xl" />

@@ -4,7 +4,7 @@ import Teaching from "../_components/Home Content/teaching";
 export default function TeachingPage() {
   return (
     <main>
-      <Teaching>
+      <Teaching buttonHidden={true}>
         <TeachingCard />
         <TeachingCard />
         <TeachingCard />

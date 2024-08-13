@@ -1,7 +1,7 @@
 import Button from "../Button/button";
 import Line from "../Line/line";
 
-function Article({ children }) {
+function Article({ children, buttonHidden }) {
   return (
     <div className="mx-4 my-8">
       <p className="text-2xl font-bold">Articles</p>
@@ -14,7 +14,7 @@ function Article({ children }) {
         {children}
       </div>
       <div className="flex justify-center">
-        <Button to="/article">View More Articles</Button>
+        {!buttonHidden && <Button to="/article">View More Articles</Button>}
       </div>
     </div>
   );

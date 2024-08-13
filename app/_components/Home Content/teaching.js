@@ -2,7 +2,7 @@ import { Children } from "react";
 import Line from "../Line/line";
 import Button from "../Button/button";
 
-function Teaching({ children }) {
+function Teaching({ children, buttonHidden }) {
   return (
     <div className="mx-4 my-8">
       <p className="text-2xl font-bold">Teachings</p>
@@ -11,9 +11,11 @@ function Teaching({ children }) {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-10">
         {children}
       </div>
-      <div className="flex justify-center">
-        <Button to="/teaching">View More Video</Button>
-      </div>
+      {!buttonHidden && (
+        <div className="flex justify-center">
+          <Button to="/teaching">View More Video</Button>
+        </div>
+      )}
     </div>
   );
 }

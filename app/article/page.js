@@ -6,7 +6,7 @@ import Teaching from "../_components/Home Content/teaching";
 export default function ArticlesPage() {
   return (
     <main>
-      <Article>
+      <Article buttonHidden={true}>
         <ArticleCard />
         <ArticleCard />
         <ArticleCard />
