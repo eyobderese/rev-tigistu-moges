@@ -5,7 +5,7 @@ import Teaching from "../_components/Home Content/teaching";
 
 export default function ArticlesPage() {
   return (
-    <main>
+    <main className="lg:mx-[160px]">
       <Article buttonHidden={true}>
         <ArticleCard />
         <ArticleCard />

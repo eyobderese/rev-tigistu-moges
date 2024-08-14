@@ -4,7 +4,7 @@ export default async function ArticleDetailPage({ params }) {
   const { articleId } = params;
 
   return (
-    <div className="m-3">
+    <div className="m-3 lg:mx-[160px]">
       <ArticleDetail />
     </div>
   );

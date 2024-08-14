@@ -3,7 +3,7 @@ import Teaching from "../_components/Home Content/teaching";
 
 export default function TeachingPage() {
   return (
-    <main>
+    <main className="lg:mx-[160px]">
       <Teaching buttonHidden={true}>
         <TeachingCard />
         <TeachingCard />

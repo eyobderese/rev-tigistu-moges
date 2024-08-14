@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <div className="lg mx-9">
+      <div className="lg:mx-[160px]">
         <Message />
         <Bio className="sm:flex-row" />
         <Teaching>
