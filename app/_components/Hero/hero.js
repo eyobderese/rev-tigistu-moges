@@ -1,14 +1,19 @@
 import Image from "next/image";
-import backgroundImage from "../../assets/imags/persona.png";
+// import backgroundImage from "../../assets/imags/persona.png";
 
-function Hero() {
+function Hero({ content }) {
   return (
     <div className="border  relative bg-cover bg-center max-h-[90vh] max-w-screen m-t items-center overflow-hidden">
-      <Image src={backgroundImage} className="w-full object-cover" />
+      <Image
+        src={content.backgroundImage.filename}
+        width={1000}
+        height={1000}
+        className="w-full object-cover"
+      />
 
       <div className="hidden sm:block p-4 absolute bottom-1/3 md:bottom-[20%] left md:bg-secondary md:bg-opacity-50  md:p-10 md:border border-l-0  md:border-white rounded-xl  ">
         <p className="text-white  text-3xl w-96 text-center mx-auto ">
-          “ስለዚህ ማንም በክርስቶስ ቢሆን አዲስ ፍጥረት ነው፤ አሮጌው ነገር አልፎአል፤ እነሆ፥ ሁሉም አዲስ ሆኖአል”
+          {content.qoute}
         </p>
       </div>
 
@@ -20,7 +25,7 @@ function Hero() {
 
       <div className="bg-primary h-1/6 sm:h-28 sm:absolute sm:bottom-0 sm:z-10">
         <p className="text-white  text-3xl w-96 text-center mx-auto sm:hidden ">
-          “ስለዚህ ማንም በክርስቶስ ቢሆን አዲስ ፍጥረት ነው፤ አሮጌው ነገር አልፎአል፤ እነሆ፥ ሁሉም አዲስ ሆኖአል”
+          {content.qoute}
         </p>
       </div>
     </div>

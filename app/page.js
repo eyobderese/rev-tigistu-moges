@@ -1,3 +1,4 @@
+import getStoryblokClient from "@/service/storyBlokService";
 import ArticleCard from "./_components/Card/articleCard";
 import TeachingCard from "./_components/Card/teachingCard";
 import Hero from "./_components/Hero/hero";
@@ -6,25 +7,19 @@ import Bio from "./_components/Home Content/bio";
 import Message from "./_components/Home Content/message";
 import Teaching from "./_components/Home Content/teaching";
 
-export default function Home() {
+export default async function Home() {
+  const components = await getStoryblokClient("landing");
+  console.log(components);
+
   return (
     <main>
-      <Hero />
+      <Hero content={components.Hero} />
       <div className="lg:mx-[160px]">
-        <Message />
-        <Bio className="sm:flex-row" />
-        <Teaching>
-          <TeachingCard />
-          <TeachingCard />
-          <TeachingCard />
-          <TeachingCard />
-        </Teaching>
-        <Article>
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
-          <ArticleCard />
-        </Article>
+        <Message content={components.Message} />
+        <Bio className="sm:flex-row" content={components.Bio} />
+        <Teaching content={components.Teaching} />
+
+        <Article content={components.Articles} />
       </div>
     </main>
   );
