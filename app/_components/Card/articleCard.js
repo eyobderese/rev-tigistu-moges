@@ -10,7 +10,12 @@ function ArticleCard({ content }) {
   return (
     <div className="flex flex-col p-2 max-w-[600px] gap-3 mt-5">
       <div>
-        <Image src={content.thumbnail.filename} className="rounded-3xl" />
+        <Image
+          src={content.thumbnail.filename}
+          width={400}
+          height={400}
+          className="rounded-3xl"
+        />
       </div>
 
       <div className="flex gap-3 w">
@@ -19,10 +24,11 @@ function ArticleCard({ content }) {
           <p className=" text-lg overflow-hidden whitespace-normal line-clamp-2 leading-tight ">
             {content.cardDescription}
           </p>
-          <Link href="/article/1">
+          <Link href={`/article/${content._uid}`}>
             {" "}
-            //TODO: pass the paragraphs and the title to the article detaile
-            page
+            {
+              //TODO: pass the paragraphs and the title to the article detaile page
+            }
             <div className="flex gap-2">
               <p className="font-bold text-[16px] text-primary hover:text-[18px]">
                 Read atricle{" "}
