@@ -4,20 +4,31 @@ import logo from "../../assets/imags/church_logo.jpg";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 
-function ArticleCard() {
+function ArticleCard({ content }) {
+  const pargraphs = content.teachingContent;
+  console.log(pargraphs);
   return (
     <div className="flex flex-col p-2 max-w-[600px] gap-3 mt-5">
       <div>
-        <Image src={persona} className="rounded-3xl" />
+        <Image
+          src={content.thumbnail.filename}
+          width={400}
+          height={400}
+          className="rounded-3xl"
+        />
       </div>
 
       <div className="flex gap-3 w">
         <div className="flex flex-col gap-2">
-          <p className="font-extrabold text-xl">ዕውቀት ማጣት</p>
+          <p className="font-extrabold text-xl">{content.title}</p>
           <p className=" text-lg overflow-hidden whitespace-normal line-clamp-2 leading-tight ">
-            እግዚአብሔር ፈጣሪ ነው። ነገር ግን ፈጣሪ ብቻ አይደለም። አዳሽም ነው! የፈጠረው ቢበላሽ ይሠራዋል፣ ቢሰበር
+            {content.cardDescription}
           </p>
-          <Link href="/article/1">
+          <Link href={`/article/${content._uid}`}>
+            {" "}
+            {
+              //TODO: pass the paragraphs and the title to the article detaile page
+            }
             <div className="flex gap-2">
               <p className="font-bold text-[16px] text-primary hover:text-[18px]">
                 Read atricle{" "}
