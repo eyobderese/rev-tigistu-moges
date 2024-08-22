@@ -1,16 +1,22 @@
 "use client";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { NavigationContext } from "../../_context/navContext";
 
 const NavLinks = () => {
+  const { selectedNavItem, setSelectedNavItem } = useContext(NavigationContext);
+
+  useEffect(() => {
+    setSelectedNavItem("Home");
+  }, []);
+
   const navItem = [
     { name: "Home", link: "/" },
     { name: "Teaching", link: "/teaching" },
     { name: "Article", link: "/article" },
     { name: "About", link: "/about" },
   ];
-  const [activeLink, setActiveLink] = useState("Home");
 
   return (
     <>
@@ -18,8 +24,10 @@ const NavLinks = () => {
         <AnimatedLink
           key={item.name}
           href={item.link}
-          className={activeLink === item.name ? "border-b-2 text-[19px]" : ""}
-          onClick={() => setActiveLink(item.name)}
+          className={
+            selectedNavItem === item.name ? "border-b-2 text-[19px]" : ""
+          }
+          onClick={() => setSelectedNavItem(item.name)}
         >
           {item.name}
         </AnimatedLink>

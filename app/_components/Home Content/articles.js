@@ -16,7 +16,11 @@ function Article({ children, buttonHidden, content }) {
         })}
       </div>
       <div className="flex justify-center">
-        {!buttonHidden && <Button to="/article">View More Articles</Button>}
+        {!buttonHidden && (
+          <Button to="/article" pageName="Article">
+            View More Articles
+          </Button>
+        )}
       </div>
     </div>
   );

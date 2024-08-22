@@ -27,7 +27,9 @@ async function Teaching({ buttonHidden, content }) {
       </div>
       {!buttonHidden && (
         <div className="flex justify-center">
-          <Button to="/teaching">View More Video</Button>
+          <Button to="/teaching" pageName="Teaching">
+            View More Video
+          </Button>
         </div>
       )}
     </div>
