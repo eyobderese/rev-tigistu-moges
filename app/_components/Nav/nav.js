@@ -25,7 +25,9 @@ const NavLinks = () => {
           key={item.name}
           href={item.link}
           className={
-            selectedNavItem === item.name ? "border-b-2 text-[19px]" : ""
+            selectedNavItem === item.name
+              ? "border-b-2 text-[19px] font-bold"
+              : ""
           }
           onClick={() => setSelectedNavItem(item.name)}
         >
@@ -89,7 +91,7 @@ function Nav() {
 function AnimatedLink({ href, children, onClick, className }) {
   return (
     <Link
-      class={`group text-white transition-all duration-300 ease-in-out font-bold text-[17px] ${className}`}
+      class={`group text-white transition-all duration-300 ease-in-out hover:font-bold text-[17px] ${className}`}
       href={href}
       onClick={onClick}
     >
