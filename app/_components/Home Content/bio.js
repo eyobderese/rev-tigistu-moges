@@ -11,7 +11,7 @@ function Bio({ className, ishideden, content }) {
     <div>
       <div className="text-left hidden sm:block md:hidden mx-4">
         {" "}
-        <p className="text-4xl font-bold align-middle ">
+        <p className="text-[24px] leading-[27.84px] md:text-[30px] md:leading-[34.8px]  lg:text-[36px] lg:leading-[41.76px] font-bold align-middle">
           Who is <span className="text-primary">Rev Tigistu?</span>
         </p>
         <Line className="w-1/2 ml-0" />
@@ -20,7 +20,7 @@ function Bio({ className, ishideden, content }) {
         className={`flex flex-col justify-center md:justify-between  md:gap-14   mt-4 flex-shrink relative ${className}`}
       >
         <div className="mx-4 flex-shrink pb-10 max-w-[600px] ">
-          <p className="text-4xl font-bold align-middle sm:hidden md:block ">
+          <p className="text-[24px] leading-[27.84px] md:text-[30px] md:leading-[34.8px]  lg:text-[36px] lg:leading-[41.76px] font-bold align-middle sm:hidden md:block ">
             Who is <span className="text-primary">Rev Tigistu?</span>
           </p>
           <Line className="sm:hidden md:block" />
@@ -33,12 +33,12 @@ function Bio({ className, ishideden, content }) {
             )}
           </p>
         </div>
-        <div className="max-h-[350px] md:max-h-[600px] border rounded-md mx-4 sm:min-w-[400px] flex-grow max-w-[700px]">
+        <div className="max-h-[350px] md:max-h-[600px] border rounded-md mx-4 sm:min-w-[400px] flex-grow max-w-[700px] overflow-hidden">
           <Image
             src={content.sideImage.filename}
             width={1000}
             height={1000}
-            className="z-10 relative w-full h-full "
+            className="relative w-full h-full "
           />
         </div>
         <div className="absolute inset-x-0 bottom-0 h-14 bg-primary z-0"></div>

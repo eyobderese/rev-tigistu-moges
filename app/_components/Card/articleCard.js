@@ -25,10 +25,6 @@ function ArticleCard({ content }) {
             {content.cardDescription}
           </p>
           <Link href={`/article/${content._uid}`}>
-            {" "}
-            {
-              //TODO: pass the paragraphs and the title to the article detaile page
-            }
             <div className="flex gap-2">
               <p className="font-bold text-[16px] text-primary hover:text-[18px]">
                 Read atricle{" "}

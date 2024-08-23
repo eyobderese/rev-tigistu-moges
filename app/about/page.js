@@ -7,8 +7,6 @@ export default async function BioPage() {
   const components = await getStoryblokClient("about");
   const BioCards = components.BioContainer.BioCards;
 
-  console.log(BioCards);
-
   return (
     <main className="mx-[5%] lg:mx-0">
       <Bio

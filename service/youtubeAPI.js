@@ -2,7 +2,7 @@ import axios from "axios";
 
 const API_KEY = "AIzaSyDDxNQM0QXVHS-bhjNUBCYu-RUkKP0HDD4";
 
-function getVideoId(url) {
+export function getVideoId(url) {
   const urlObj = new URL(url);
   const params = new URLSearchParams(urlObj.search);
   return params.get("v");
