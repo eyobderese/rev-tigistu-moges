@@ -1,7 +1,4 @@
 const { default: Image } = require("next/image");
-import persona from "../../assets/imags/persona.png";
-import logo from "../../assets/imags/church_logo.jpg";
-import Link from "next/link";
 
 function TeachingCard({ content, logo, onClick }) {
   return (
@@ -32,7 +29,7 @@ function TeachingCard({ content, logo, onClick }) {
           <p className="font-bold text-[16px] leading-[20px] overflow-hidden whitespace-normal line-clamp-2">
             {content.title}
           </p>
-          <p className="opacity-70 text-[16px] leading-[18px]">
+          <p className="opacity-70 text-[16px] leading-[18px] ">
             {content.views} Views .{content.dateOfPost}
           </p>
         </div>

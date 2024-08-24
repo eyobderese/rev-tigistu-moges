@@ -36,7 +36,7 @@ export default async function getVideoDetailsFromUrls(urls) {
     const videoDetails = {
       title: snippet.title,
       description: snippet.description,
-      thumbnail: snippet.thumbnails.default.url,
+      thumbnail: snippet.thumbnails.high.url,
       dateOfPost: formatDate(snippet.publishedAt),
       views: formatViews(statistics.viewCount),
       url: url,
