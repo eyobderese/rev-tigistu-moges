@@ -28,21 +28,36 @@ export default async function getVideoDetailsFromUrls(urls) {
 
   for (let url of urls) {
     const videoId = getVideoId(url);
-    const response = await axios.get(
-      `https://www.googleapis.com/youtube/v3/videos?id=${videoId}&key=${API_KEY}&part=snippet,statistics`
-    );
-    const { snippet, statistics } = response.data.items[0];
+    try {
+      const response = await axios.get(
+        `https://www.googleapisbad.com/youtube/v3/videos?id=${videoId}&key=${API_KEY}&part=snippet,statistics`
+      );
+      const { snippet, statistics } = response.data.items[0];
 
-    const videoDetails = {
-      title: snippet.title,
-      description: snippet.description,
-      thumbnail: snippet.thumbnails.high.url,
-      dateOfPost: formatDate(snippet.publishedAt),
-      views: formatViews(statistics.viewCount),
-      url: url,
-    };
+      const videoDetails = {
+        title: snippet.title,
+        description: snippet.description,
+        thumbnail: snippet.thumbnails.high.url,
+        dateOfPost: formatDate(snippet.publishedAt),
+        views: formatViews(statistics.viewCount),
+        url: url,
+      };
 
-    videoDetailsArray.push(videoDetails);
+      videoDetailsArray.push(videoDetails);
+    } catch (error) {
+      console.error(`Failed to get video details for url ${url}: ${error}`);
+      // Return a default videoDetails object
+      const defaultVideoDetails = {
+        title: "Video not available",
+        description: "Description not available",
+        thumbnail: "/placeholder.png",
+        dateOfPost: "Date not available",
+        views: "Views not available",
+        url: url,
+      };
+
+      videoDetailsArray.push(defaultVideoDetails);
+    }
   }
 
   return videoDetailsArray;

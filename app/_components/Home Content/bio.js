@@ -27,9 +27,14 @@ function Bio({ className, ishideden, content }) {
           <p className="my-5 text-base">
             {content.history}
             {!ishideden && (
-              <Link href="/about" className="text-primary underline">
-                Read More{" "}
-              </Link>
+              <Button
+                to="/about"
+                className="text-primary underline"
+                pageName="About"
+              >
+                {" "}
+                Read More
+              </Button>
             )}
           </p>
         </div>

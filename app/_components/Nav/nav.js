@@ -8,7 +8,10 @@ const NavLinks = () => {
   const { selectedNavItem, setSelectedNavItem } = useContext(NavigationContext);
 
   useEffect(() => {
-    setSelectedNavItem("Home");
+    const savedNavItem = localStorage.getItem("selectedNavItem");
+
+    // If a navigation item was saved, use it. Otherwise, use "Home"
+    setSelectedNavItem(savedNavItem || "Home");
   }, []);
 
   const navItem = [
@@ -29,7 +32,10 @@ const NavLinks = () => {
               ? "border-b-2 text-[19px] font-bold"
               : ""
           }
-          onClick={() => setSelectedNavItem(item.name)}
+          onClick={() => {
+            localStorage.setItem("selectedNavItem", item.name);
+            setSelectedNavItem(item.name);
+          }}
         >
           {item.name}
         </AnimatedLink>
