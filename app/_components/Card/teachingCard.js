@@ -12,6 +12,7 @@ function TeachingCard({ content, logo, onClick }) {
           width={1000}
           height={1000}
           className="rounded-3xl"
+          alt="thumbnail"
         />
       </div>
 
@@ -22,6 +23,7 @@ function TeachingCard({ content, logo, onClick }) {
             width={100}
             height={100}
             className="object-cover w-full h-full"
+            alt="thumbnail"
           />
         </div>
 

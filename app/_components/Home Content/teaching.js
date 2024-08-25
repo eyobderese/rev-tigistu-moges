@@ -32,7 +32,7 @@ function Teaching({ buttonHidden, content }) {
           <TeachingCard
             content={info}
             logo={content.logo}
-            key={info.title}
+            key={info.id}
             onClick={() => openModal(info.url)} // Use the correct video ID here
           />
         ))}

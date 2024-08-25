@@ -15,6 +15,7 @@ function ArticleCard({ content }) {
           width={400}
           height={400}
           className="rounded-3xl"
+          alt="thumbnail"
         />
       </div>
 

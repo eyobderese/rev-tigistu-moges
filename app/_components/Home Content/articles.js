@@ -16,7 +16,9 @@ function Article({ children, buttonHidden, content }) {
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {articles.map((articleContent) => {
-          return <ArticleCard content={articleContent} />;
+          return (
+            <ArticleCard content={articleContent} key={articleContent._uid} />
+          );
         })}
       </div>
       <div className="flex justify-center">

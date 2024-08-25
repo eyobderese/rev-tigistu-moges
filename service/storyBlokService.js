@@ -3,12 +3,12 @@ const StoryblokClient = require("storyblok-js-client");
 export default async function getStoryblokClient(slug) {
   let Storyblok = new StoryblokClient({
     accessToken: "CzR2c8HKZCrgreuphOcbJQtt",
-    cache: false,
   });
 
   try {
     const response = await Storyblok.get(`cdn/stories/${slug}`, {
       version: "published",
+      cv: 172363545,
     });
 
     const components = response.data.story.content.body.reduce(

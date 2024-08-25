@@ -14,6 +14,7 @@ function ArticleDetail({ content }) {
           width={1000}
           height={1000}
           className="w-full h-full  object-fill opacity-40"
+          alt="thumbnail"
         />
         <div className="absolute bottom-0 left-0 p-4 text-white">
           <p className="font-bold text-[30px] leading-[43px] md:text[66px] md:leading-[92.4px] ">
@@ -28,7 +29,10 @@ function ArticleDetail({ content }) {
 
       {pargraphs.map((pargraph) => {
         return (
-          <p className="my-8 text-[16px] leading-[25.68px] md:text-[19px] md:leading-[30px] lg:text-[23px] lg:leading-[37px]">
+          <p
+            className="my-8 text-[16px] leading-[25.68px] md:text-[19px] md:leading-[30px] lg:text-[23px] lg:leading-[37px]"
+            key={pargraph._uid}
+          >
             {pargraph.text}
           </p>
         );

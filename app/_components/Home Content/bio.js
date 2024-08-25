@@ -44,6 +44,7 @@ function Bio({ className, ishideden, content }) {
             width={1000}
             height={1000}
             className="relative w-full h-full "
+            alt="Pasters photo"
           />
         </div>
         <div className="absolute inset-x-0 bottom-0 h-14 bg-primary z-0"></div>

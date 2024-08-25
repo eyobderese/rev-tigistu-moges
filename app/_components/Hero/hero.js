@@ -9,6 +9,7 @@ function Hero({ content }) {
         width={1000}
         height={1000}
         className="w-full object-cover"
+        alt="background"
       />
 
       <div className="hidden md:block lg:flex  p-4 absolute bottom-[10%] lg:bottom-[20%]  lg:bg-secondary lg:bg-opacity-50  max-lg:py-10   lg:border border-l-0  lg:border-white rounded-xl w-[490px] lg:w-[640px] lg:h-[312px] items-center justify-center">

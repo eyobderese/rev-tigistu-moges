@@ -30,7 +30,7 @@ export default async function getVideoDetailsFromUrls(urls) {
     const videoId = getVideoId(url);
     try {
       const response = await axios.get(
-        `https://www.googleapisbad.com/youtube/v3/videos?id=${videoId}&key=${API_KEY}&part=snippet,statistics`
+        `https://www.googleapis.com/youtube/v3/videos?id=${videoId}&key=${API_KEY}&part=snippet,statistics`
       );
       const { snippet, statistics } = response.data.items[0];
 
@@ -41,6 +41,7 @@ export default async function getVideoDetailsFromUrls(urls) {
         dateOfPost: formatDate(snippet.publishedAt),
         views: formatViews(statistics.viewCount),
         url: url,
+        id: videoId,
       };
 
       videoDetailsArray.push(videoDetails);
@@ -54,6 +55,7 @@ export default async function getVideoDetailsFromUrls(urls) {
         dateOfPost: "Date not available",
         views: "Views not available",
         url: url,
+        id: Math.random().toString(36).substring(7),
       };
 
       videoDetailsArray.push(defaultVideoDetails);

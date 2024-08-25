@@ -97,11 +97,11 @@ function Nav() {
 function AnimatedLink({ href, children, onClick, className }) {
   return (
     <Link
-      class={`group text-white transition-all duration-300 ease-in-out hover:font-bold text-[17px] ${className}`}
+      className={`group text-white transition-all duration-300 ease-in-out hover:font-bold text-[17px] ${className}`}
       href={href}
       onClick={onClick}
     >
-      <span class="bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+      <span className="bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
         {children}
       </span>
     </Link>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Button from "../Button/button";
 import Line from "../Line/line";
 

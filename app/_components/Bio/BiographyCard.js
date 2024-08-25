@@ -28,7 +28,12 @@ function BiographyCard({ direction, ...props }) {
       </div>
 
       <div className="border border-black lg:hidden">
-        <Image src={props.image.filename} width={416} height={278} />
+        <Image
+          src={props.image.filename}
+          width={416}
+          height={278}
+          alt="Pasters photo"
+        />
       </div>
 
       <div
@@ -37,7 +42,12 @@ function BiographyCard({ direction, ...props }) {
         <Line className={`mx-auto w-1 h-[200px] relative ${directionClass} `} />
 
         <div className={`border border-black bg-primary self-end  ${pad} `}>
-          <Image src={props.image.filename} width={416} height={278} />
+          <Image
+            src={props.image.filename}
+            width={416}
+            height={278}
+            alt="Pasters photo"
+          />
         </div>
       </div>
     </div>
