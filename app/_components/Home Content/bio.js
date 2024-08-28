@@ -5,7 +5,7 @@ import Button from "../Button/button";
 import Link from "next/link";
 
 function Bio({ className, ishideden, content }) {
-  className = className || "flex-row";
+  className = className || "sm:flex-row";
   ishideden = ishideden || false;
   return (
     <div>
@@ -19,7 +19,7 @@ function Bio({ className, ishideden, content }) {
       <div
         className={`flex flex-col justify-center md:justify-between  md:gap-14   mt-4 flex-shrink relative ${className}`}
       >
-        <div className="mx-4 flex-shrink pb-10 max-w-[600px] ">
+        <div className="mx-4 flex-shrink pb-10 max-w-[600px] flex-grow self-center">
           <p className="text-[24px] leading-[27.84px] md:text-[30px] md:leading-[34.8px]  lg:text-[36px] lg:leading-[41.76px] font-bold align-middle sm:hidden md:block ">
             Who is <span className="text-primary">Rev Tigistu?</span>
           </p>
@@ -38,12 +38,12 @@ function Bio({ className, ishideden, content }) {
             )}
           </p>
         </div>
-        <div className="max-h-[350px] md:max-h-[600px] border rounded-md mx-4 sm:min-w-[400px] flex-grow max-w-[700px] overflow-hidden">
+        <div className="flex-grow min-w-[50%]">
           <Image
             src={content.sideImage.filename}
             width={1000}
             height={1000}
-            className="relative w-full h-full "
+            className="relative w-full h-full border"
             alt="Pasters photo"
           />
         </div>

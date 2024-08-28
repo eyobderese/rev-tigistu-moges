@@ -13,7 +13,7 @@ function Hero({ content }) {
       />
 
       <div className="hidden md:block lg:flex  p-4 absolute bottom-[10%] lg:bottom-[20%]  lg:bg-secondary lg:bg-opacity-50  max-lg:py-10   lg:border border-l-0  lg:border-white rounded-xl w-[490px] lg:w-[640px] lg:h-[312px] items-center justify-center">
-        <p className="text-white  text-3xl leading-[31px] lg:text-[40px] l lg:leading-[52px] align-middle w-[550px] text-center lg:text-left max-w-[550px]">
+        <p className="text-white  text-3xl leading-[31px] lg:text-[40px] l lg:leading-[52px] align-middle w-[90%] text-center lg:text-left max-w-[550px]">
           {content.qoute}
         </p>
       </div>

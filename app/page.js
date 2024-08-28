@@ -25,7 +25,7 @@ export default async function Home() {
       <Hero content={components.Hero} />
       <div className="lg:mx-[160px]">
         <Message content={components.Message} />
-        <Bio className="sm:flex-row" content={components.Bio} />
+        <Bio className="sm:flex-row-reverse" content={components.Bio} />
         <Teaching content={TeachingContents} />
 
         <Article content={components.Articles} />
