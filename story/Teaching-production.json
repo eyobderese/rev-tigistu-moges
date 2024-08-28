@@ -1,0 +1,39 @@
+{
+  "name": "Teaching",
+  "display_name": null,
+  "created_at": "2024-08-13T03:58:15.490Z",
+  "updated_at": "2024-08-14T11:31:40.373Z",
+  "id": 6161284,
+  "schema": {
+    "description": {
+      "type": "text",
+      "pos": 0
+    },
+    "churchLogo": {
+      "type": "asset",
+      "pos": 1,
+      "filetypes": [
+        "images"
+      ]
+    },
+    "TeachingVideos": {
+      "type": "bloks",
+      "pos": 2,
+      "display_name": ""
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": false,
+  "preview_tmpl": null,
+  "is_nestable": true,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "Teaching",
+  "component_group_uuid": null,
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [],
+  "internal_tag_ids": [],
+  "content_type_asset_preview": null
+}

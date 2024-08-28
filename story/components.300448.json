@@ -1,0 +1,424 @@
+{
+  "components": [
+    {
+      "name": "ArticleCard",
+      "display_name": null,
+      "created_at": "2024-08-13T04:12:40.230Z",
+      "updated_at": "2024-08-18T06:57:41.081Z",
+      "id": 6161286,
+      "schema": {
+        "title": {
+          "type": "text",
+          "pos": 0
+        },
+        "cardDescription": {
+          "type": "text",
+          "pos": 1
+        },
+        "thumbnail": {
+          "type": "asset",
+          "pos": 2,
+          "filetypes": [
+            "images"
+          ]
+        },
+        "teachingContent": {
+          "type": "bloks",
+          "pos": 3,
+          "display_name": "TeachingContents"
+        },
+        "postDate": {
+          "type": "datetime",
+          "pos": 4
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "ArticleCard",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "Articles",
+      "display_name": null,
+      "created_at": "2024-08-13T04:11:46.490Z",
+      "updated_at": "2024-08-14T13:48:35.572Z",
+      "id": 6161285,
+      "schema": {
+        "description": {
+          "type": "text",
+          "pos": 0
+        },
+        "churchLogo": {
+          "type": "asset",
+          "pos": 1,
+          "filetypes": [
+            "images"
+          ]
+        },
+        "ArticlesCard": {
+          "type": "bloks",
+          "pos": 2
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Articles",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "Bio",
+      "display_name": null,
+      "created_at": "2024-08-13T03:47:42.364Z",
+      "updated_at": "2024-08-13T03:48:54.557Z",
+      "id": 6161252,
+      "schema": {
+        "sideImage": {
+          "type": "asset",
+          "pos": 0,
+          "filetypes": [
+            "images"
+          ]
+        },
+        "history": {
+          "type": "text",
+          "pos": 1
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Bio",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "BioCard",
+      "display_name": null,
+      "created_at": "2024-08-18T07:34:21.214Z",
+      "updated_at": "2024-08-18T07:35:42.548Z",
+      "id": 6178792,
+      "schema": {
+        "title": {
+          "type": "text",
+          "pos": 0
+        },
+        "yearRange": {
+          "type": "text",
+          "pos": 1
+        },
+        "history": {
+          "type": "text",
+          "pos": 2
+        },
+        "image": {
+          "type": "asset",
+          "pos": 3,
+          "filetypes": [
+            "images"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "BioCard",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "BioContainer",
+      "display_name": null,
+      "created_at": "2024-08-18T07:45:44.401Z",
+      "updated_at": "2024-08-18T07:46:34.828Z",
+      "id": 6178826,
+      "schema": {
+        "BioCards": {
+          "type": "bloks",
+          "pos": 0
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "BioContainer",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "Hero",
+      "display_name": null,
+      "created_at": "2024-08-13T03:41:31.135Z",
+      "updated_at": "2024-08-13T03:45:10.602Z",
+      "id": 6161249,
+      "schema": {
+        "qoute": {
+          "type": "text",
+          "pos": 0
+        },
+        "backgroundImage": {
+          "type": "asset",
+          "pos": 1,
+          "filetypes": [
+            "images"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Hero",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "Landing",
+      "display_name": null,
+      "created_at": "2024-08-13T03:17:27.613Z",
+      "updated_at": "2024-08-13T03:41:11.826Z",
+      "id": 6161242,
+      "schema": {
+        "Hero": {
+          "type": "bloks",
+          "pos": 0
+        },
+        "Message": {
+          "type": "bloks",
+          "pos": 1
+        },
+        "Bio": {
+          "type": "bloks",
+          "pos": 2
+        },
+        "Teaching": {
+          "type": "bloks",
+          "pos": 3
+        },
+        "Article": {
+          "type": "bloks",
+          "pos": 4
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": false,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Landing",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "Message",
+      "display_name": null,
+      "created_at": "2024-08-13T03:46:28.809Z",
+      "updated_at": "2024-08-13T03:47:12.965Z",
+      "id": 6161250,
+      "schema": {
+        "titile": {
+          "type": "text",
+          "pos": 0
+        },
+        "message": {
+          "type": "text",
+          "pos": 1
+        },
+        "videoLink": {
+          "type": "multilink",
+          "pos": 2
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Message",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "page",
+      "display_name": null,
+      "created_at": "2024-08-13T01:49:46.830Z",
+      "updated_at": "2024-08-13T01:49:46.830Z",
+      "id": 6160910,
+      "schema": {
+        "body": {
+          "type": "bloks"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": false,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "page",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "paragraph",
+      "display_name": null,
+      "created_at": "2024-08-15T20:04:49.380Z",
+      "updated_at": "2024-08-15T20:05:05.373Z",
+      "id": 6173017,
+      "schema": {
+        "text": {
+          "type": "text",
+          "pos": 0
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "paragraph",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "Teaching",
+      "display_name": null,
+      "created_at": "2024-08-13T03:58:15.490Z",
+      "updated_at": "2024-08-14T11:31:40.373Z",
+      "id": 6161284,
+      "schema": {
+        "description": {
+          "type": "text",
+          "pos": 0
+        },
+        "churchLogo": {
+          "type": "asset",
+          "pos": 1,
+          "filetypes": [
+            "images"
+          ]
+        },
+        "TeachingVideos": {
+          "type": "bloks",
+          "pos": 2,
+          "display_name": ""
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Teaching",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    },
+    {
+      "name": "video",
+      "display_name": null,
+      "created_at": "2024-08-14T11:31:58.173Z",
+      "updated_at": "2024-08-14T11:32:14.092Z",
+      "id": 6167244,
+      "schema": {
+        "videoLink": {
+          "type": "multilink",
+          "pos": 0
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "video",
+      "component_group_uuid": null,
+      "color": null,
+      "icon": null,
+      "internal_tags_list": [],
+      "internal_tag_ids": [],
+      "content_type_asset_preview": null
+    }
+  ],
+  "component_groups": []
+}
