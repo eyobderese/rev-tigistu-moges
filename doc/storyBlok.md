@@ -1,6 +1,6 @@
 # Storyblok Structure Documentation
 
-## Story Overview For Home Page
+# Story Overview For `Home Page`
 
 - **Story Name:** Landing
 - **ID:** 534784302
@@ -94,7 +94,7 @@
 
 ![Screenshoot teaching page](./docPicture/articleCard.PNG)
 
-## Story Overview For Teaching Page
+# Story Overview For `Teaching Page`
 
 - **Story Name:** Teaching
 - **ID:** 535847626
@@ -141,7 +141,7 @@
 - **Multilink:** Links to external resources (e.g., video links).
 - **Array:** Lists of items, each representing a sub-component or content block.
 
-## Story Overview For Article Page
+# Story Overview For `Article Page`
 
 - **Story Name:** Article
 - **ID:** 535866111
@@ -185,7 +185,7 @@
 
 ![Screenshoot teaching page](./docPicture/articleCard.PNG)
 
-## Story Overview For About Page
+# Story Overview For `About Page`
 
 - **Story Name:** About
 - **ID:** 536580504
