@@ -2,6 +2,8 @@ import Button from "../Button/button";
 import Line from "../Line/line";
 
 function Message({ content }) {
+  const videoId = content.videoLink.url.split("v=")[1];
+  const embedUrl = `https://www.youtube.com/embed/${videoId}`;
   return (
     <div className="flex flex-col justify-center md:justify-between md:gap-24 md:flex-row mx-4 mt-4 flex-shrink ">
       <div className="flex-shrink pb-10">
@@ -19,7 +21,7 @@ function Message({ content }) {
       <div className=" w-full md:w-1/3 h-96 flex justify-center align-middle lg:min-w-[430px] overflow-hidden">
         <iframe
           className="w-full h-5/6 overflow-hidden"
-          src={content.videoLink.url}
+          src={embedUrl}
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

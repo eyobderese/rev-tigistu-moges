@@ -5,7 +5,6 @@ import Link from "next/link";
 
 function ArticleCard({ content }) {
   const pargraphs = content.teachingContent;
-  console.log(pargraphs);
   return (
     <div className="flex flex-col p-2 max-w-[600px] gap-3 mt-5">
       <div>

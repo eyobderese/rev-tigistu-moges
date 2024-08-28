@@ -3,10 +3,7 @@ import React from "react";
 import Modal from "react-modal";
 
 const VideoModal = ({ isOpen, onRequestClose, videoId }) => {
-  console.log("the link is", videoId);
-
   videoId = getVideoId(videoId);
-  console.log(videoId);
   return (
     <Modal
       isOpen={isOpen}

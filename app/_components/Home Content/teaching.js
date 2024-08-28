@@ -12,7 +12,6 @@ function Teaching({ buttonHidden, content }) {
   const openModal = (videoId) => {
     setSelectedVideoId(videoId);
     setIsModalOpen(true);
-    console.log("videoId", videoId, "modal is:", isModalOpen);
   };
 
   const closeModal = () => {

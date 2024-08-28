@@ -4,7 +4,6 @@ import Line from "../Line/line";
 
 function Article({ children, buttonHidden, content }) {
   const articles = content.ArticlesCard;
-  console.log(articles);
   return (
     <div className="mx-4 my-8">
       <p className="text-[24px] leading-[27.84px] md:text-[30px] md:leading-[34.8px]  lg:text-[36px] lg:leading-[41.76px] font-bold align-middle ">
