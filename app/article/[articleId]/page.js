@@ -1,10 +1,15 @@
 import ArticleDetail from "@/app/_components/ArticleDetail/articleDetaile";
 import getStoryblokClient from "@/service/storyBlokService";
 
-export default async function ArticleDetailPage({ params }) {
-  const components = await getStoryblokClient("landing");
+export default async function Page({ params }) {
+  console.log("params", params);
+  const [component, articleId] = params.articleId.split("_");
+  console.log("component", component);
+  console.log("articleId", articleId);
+
+  const components = await getStoryblokClient(component || "article");
+
   const articls = components.Articles.ArticlesCard;
-  const { articleId } = params;
 
   // filtter the specific article using the articleId I need the specific article not an array
 

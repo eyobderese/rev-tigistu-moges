@@ -2,7 +2,7 @@ import Button from "../Button/button";
 import ArticleCard from "../Card/articleCard";
 import Line from "../Line/line";
 
-function Article({ children, buttonHidden, content }) {
+function Article({ children, buttonHidden, content, from }) {
   const articles = content.ArticlesCard;
   return (
     <div className="mx-4 my-8">
@@ -16,7 +16,11 @@ function Article({ children, buttonHidden, content }) {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {articles.map((articleContent) => {
           return (
-            <ArticleCard content={articleContent} key={articleContent._uid} />
+            <ArticleCard
+              content={articleContent}
+              from={from}
+              key={articleContent._uid}
+            />
           );
         })}
       </div>

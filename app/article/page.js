@@ -8,7 +8,11 @@ export default async function ArticlesPage() {
   const components = await getStoryblokClient("article");
   return (
     <main className="lg:mx-[160px]">
-      <Article buttonHidden={true} content={components.Articles} />
+      <Article
+        buttonHidden={true}
+        content={components.Articles}
+        from="article"
+      />
     </main>
   );
 }

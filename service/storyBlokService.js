@@ -8,7 +8,7 @@ export default async function getStoryblokClient(slug) {
   try {
     const response = await Storyblok.get(`cdn/stories/${slug}`, {
       version: "published",
-      cv: 172363546,
+      cv: 172363532,
     });
 
     const components = response.data.story.content.body.reduce(

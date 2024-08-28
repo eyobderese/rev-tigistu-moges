@@ -3,7 +3,7 @@ const { default: Image } = require("next/image");
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 
-function ArticleCard({ content }) {
+function ArticleCard({ content, from }) {
   const pargraphs = content.teachingContent;
   return (
     <div className="flex flex-col p-2 max-w-[600px] gap-3 mt-5">
@@ -23,7 +23,7 @@ function ArticleCard({ content }) {
           <p className=" text-lg overflow-hidden whitespace-normal line-clamp-2 leading-tight ">
             {content.cardDescription}
           </p>
-          <Link href={`/article/${content._uid}`}>
+          <Link href={`/article/${from}_${content._uid}`}>
             <div className="flex gap-2">
               <p className="font-bold text-[16px] text-primary hover:text-[18px]">
                 Read atricle{" "}

@@ -28,7 +28,7 @@ export default async function Home() {
         <Bio className="sm:flex-row-reverse" content={components.Bio} />
         <Teaching content={TeachingContents} />
 
-        <Article content={components.Articles} />
+        <Article content={components.Articles} from="landing" />
       </div>
     </main>
   );
