@@ -1,16 +1,25 @@
 "use client";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { NavigationContext } from "../../_context/navContext";
 
 const NavLinks = () => {
+  const { selectedNavItem, setSelectedNavItem } = useContext(NavigationContext);
+
+  useEffect(() => {
+    const savedNavItem = localStorage.getItem("selectedNavItem");
+
+    // If a navigation item was saved, use it. Otherwise, use "Home"
+    setSelectedNavItem(savedNavItem || "Home");
+  }, []);
+
   const navItem = [
     { name: "Home", link: "/" },
     { name: "Teaching", link: "/teaching" },
     { name: "Article", link: "/article" },
     { name: "About", link: "/about" },
   ];
-  const [activeLink, setActiveLink] = useState("Home");
 
   return (
     <>
@@ -18,8 +27,15 @@ const NavLinks = () => {
         <AnimatedLink
           key={item.name}
           href={item.link}
-          className={activeLink === item.name ? "border-b-2 text-[19px]" : ""}
-          onClick={() => setActiveLink(item.name)}
+          className={
+            selectedNavItem === item.name
+              ? "border-b-2 text-[19px] font-bold"
+              : ""
+          }
+          onClick={() => {
+            localStorage.setItem("selectedNavItem", item.name);
+            setSelectedNavItem(item.name);
+          }}
         >
           {item.name}
         </AnimatedLink>
@@ -81,11 +97,11 @@ function Nav() {
 function AnimatedLink({ href, children, onClick, className }) {
   return (
     <Link
-      class={`group text-white transition-all duration-300 ease-in-out font-bold text-[17px] ${className}`}
+      className={`group text-white transition-all duration-300 ease-in-out hover:font-bold text-[17px] ${className}`}
       href={href}
       onClick={onClick}
     >
-      <span class="bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+      <span className="bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
         {children}
       </span>
     </Link>

@@ -14,16 +14,28 @@ function ArticleDetail({ content }) {
           width={1000}
           height={1000}
           className="w-full h-full  object-fill opacity-40"
+          alt="thumbnail"
         />
         <div className="absolute bottom-0 left-0 p-4 text-white">
-          <p className="font-bold">{content.title}</p>
-          <p>{postDate}</p>
+          <p className="font-bold text-[30px] leading-[43px] md:text[66px] md:leading-[92.4px] ">
+            {content.title}
+          </p>
+          <p className="text-[14px] leading-[15.3px] lg:text-[16px] lg:leading-[18.24px]">
+            {postDate}
+          </p>
         </div>
       </div>
       <Line className="min-h-[2px] min-w-full" />
 
       {pargraphs.map((pargraph) => {
-        return <p className="my-8">{pargraph.text}</p>;
+        return (
+          <p
+            className="my-8 text-[16px] leading-[25.68px] md:text-[19px] md:leading-[30px] lg:text-[23px] lg:leading-[37px]"
+            key={pargraph._uid}
+          >
+            {pargraph.text}
+          </p>
+        );
       })}
     </article>
   );

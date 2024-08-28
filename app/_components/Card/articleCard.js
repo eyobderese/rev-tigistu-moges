@@ -1,6 +1,5 @@
 const { default: Image } = require("next/image");
-import persona from "../../assets/imags/persona.png";
-import logo from "../../assets/imags/church_logo.jpg";
+
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 
@@ -15,6 +14,7 @@ function ArticleCard({ content }) {
           width={400}
           height={400}
           className="rounded-3xl"
+          alt="thumbnail"
         />
       </div>
 
@@ -25,10 +25,6 @@ function ArticleCard({ content }) {
             {content.cardDescription}
           </p>
           <Link href={`/article/${content._uid}`}>
-            {" "}
-            {
-              //TODO: pass the paragraphs and the title to the article detaile page
-            }
             <div className="flex gap-2">
               <p className="font-bold text-[16px] text-primary hover:text-[18px]">
                 Read atricle{" "}
